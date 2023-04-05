@@ -47,7 +47,7 @@ const Navbar = () => {
                         <div className="user" onClick={()=>setOpen(!open)}>
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-3zj8G9gN1nMK6CygVjfsQN3auL1oeaE2g&usqp=CAU" alt="" />
                             <span>{currentUser?.username}</span>
-                            {open && <div className="options">
+                            {open && <div className="options ">
                                 {
                                     currentUser?.isSeller && (
                                         <>
