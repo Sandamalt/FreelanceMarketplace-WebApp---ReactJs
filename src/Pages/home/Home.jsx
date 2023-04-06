@@ -16,6 +16,62 @@ const Home = () => {
           <CatCard key={card.id} item={card} />
         ))}
       </Slide>
+
+      <div className="features">
+        <div className="container">
+          <div className="item">
+            <h1>A whole world of freelance talent at your fingerprints</h1>
+            <div className="title">
+              <img src="./img/check.png" alt="" />
+              The best for every budget
+            </div>
+            <p>
+              {" "}
+              Find High Quality services at every price point. No hourly rates,
+              just project based pricing.
+            </p>
+            <div className="title">
+              <img src="./img/check.png" alt="" />
+              The best for every budget
+            </div>
+            <p>
+              {" "}
+              Find High Quality services at every price point. No hourly rates,
+              just project based pricing.
+            </p>
+            <div className="title">
+              <img src="./img/check.png" alt="" />
+              The best for every budget
+            </div>
+            <p>
+              {" "}
+              Find High Quality services at every price point. No hourly rates,
+              just project based pricing.
+            </p>
+            <div className="title">
+              <img src="./img/check.png" alt="" />
+              The best for every budget
+            </div>
+            <p>
+              {" "}
+              Find High Quality services at every price point. No hourly rates,
+              just project based pricing.
+            </p>
+            <div className="title">
+              <img src="./img/check.png" alt="" />
+              The best for every budget
+            </div>
+            <p>
+              {" "}
+              Find High Quality services at every price point. No hourly rates,
+              just project based pricing.
+            </p>
+          </div>
+          <div className="item">
+            <video src="./img/video.mp4" controls></video>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
