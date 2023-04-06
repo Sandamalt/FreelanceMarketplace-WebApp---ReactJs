@@ -1,6 +1,6 @@
-import "./app.scss"
-import React from "react"
-import Navbar from "./components/navbar/Navbar"
+import "./app.scss";
+import React from "react";
+import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Home from "./Pages/home/Home";
 import Add from "./Pages/add/Add";
@@ -10,68 +10,65 @@ import MyGigs from "./Pages/mygigs/MyGigs";
 import Message from "./Pages/message/Message";
 import Messages from "./Pages/messages/Messages";
 import Orders from "./Pages/orders/Orders";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 function App() {
-
-  const Layout = ()=>{
-
+  const Layout = () => {
     return (
       <div className="app">
-      <Navbar/>
-      <Outlet/>
-      <Footer/>
+        <Navbar />
+        <Outlet />
+        <Footer />
       </div>
-    )
-  }
+    );
+  };
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout/>,
-      children:[
+      element: <Layout />,
+      children: [
         {
-          path:"/",
-          element:<Home/>
+          path: "/",
+          element: <Home />,
         },
         {
-          path:"/gigs",
-          element:<Gigs/>
+          path: "/gigs",
+          element: <Gigs />,
         },
         {
-          path:"/gig/:id",
-          element:<Gig/>
-        }, {
-          path:"/orders",
-          element:<Orders/>
-        }, {
-          path:"/mygigs",
-          element:<MyGigs/>
-        }, {
-          path:"/add",
-          element:<Add/>
-        }, {
-          path:"/messages",
-          element:<Messages/>
+          path: "/gig/:id",
+          element: <Gig />,
         },
         {
-          path:"/message:id",
-          element:<Message/>
+          path: "/orders",
+          element: <Orders />,
         },
-      ]
+        {
+          path: "/mygigs",
+          element: <MyGigs />,
+        },
+        {
+          path: "/add",
+          element: <Add />,
+        },
+        {
+          path: "/messages",
+          element: <Messages />,
+        },
+        {
+          path: "/message:id",
+          element: <Message />,
+        },
+      ],
     },
   ]);
 
   return (
     <div>
-     <RouterProvider router={router} />
-
+      <RouterProvider router={router} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
