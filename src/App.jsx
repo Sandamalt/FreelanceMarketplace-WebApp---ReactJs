@@ -57,7 +57,7 @@ function App() {
           element: <Messages />,
         },
         {
-          path: "/message:id",
+          path: "/message/:id",
           element: <Message />,
         },
       ],
