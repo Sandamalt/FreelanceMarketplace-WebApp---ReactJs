@@ -6,7 +6,7 @@ import Home from "./Pages/home/Home";
 import Add from "./Pages/add/Add";
 import Gig from "./Pages/gig/Gig";
 import Gigs from "./Pages/gigs/Gigs";
-import MyGigs from "./Pages/mygigs/MyGigs";
+import MyGigs from "./Pages/myGigs/MyGigs";
 import Message from "./Pages/message/Message";
 import Messages from "./Pages/messages/Messages";
 import Orders from "./Pages/orders/Orders";
@@ -45,7 +45,7 @@ function App() {
           element: <Orders />,
         },
         {
-          path: "/mygigs",
+          path: "/myGigs",
           element: <MyGigs />,
         },
         {

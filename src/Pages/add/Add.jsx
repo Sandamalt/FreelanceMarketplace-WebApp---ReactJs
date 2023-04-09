@@ -1,11 +1,8 @@
-import React from 'react'
-import "./Add.scss"
-
+import React from "react";
+import "./Add.scss";
 
 const Add = () => {
-  return (
-    <div className='add'>Add</div>
-  )
-}
+  return <div className="add">Add new newwwwwwwwww</div>;
+};
 
-export default Add
+export default Add;
